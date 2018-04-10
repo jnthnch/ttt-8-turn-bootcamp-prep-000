@@ -31,11 +31,10 @@ def position_taken?(board, pos_idx)
   end
 end
 
-def move(board, index, mark="X") 
+def move(board, index, mark) 
   if !position_taken?(board, index)
     board[index] = mark
   end
- 
   board
 end
 
